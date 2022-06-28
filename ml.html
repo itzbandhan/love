@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <iframe src="http://youtuberepeater.com/watch?v=i2MgodR5PbE&name=congratulations+i+love+you+mehbooba+song+kgf+cheptar2"  frameborder="0" height="0" width="0" allowfullscreen></iframe> -->
+</head>
+<body>
+
+
+
+
+<div class="container">
+<button>Listen This</button> <br>
+<div class="end">
+    <a href="index.html" id="des">Visit Me</a>
+</div>
+</div>
+
+
+<style>
+
+#des{
+    font-family: 'Open Sans', sans-serif;
+font-size: 1.5rem;
+color: #fff;
+background: darkcyan;
+padding: .7rem 3.4rem;
+border-radius: .2rem;
+transition: opacity .7s;
+align-items: center;
+justify-content: center;
+display: flex;
+border-radius: 20%;
+}
+
+ .end{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    height: -100vh;
+    color: #000;
+    font-size: 23px;
+
+ }
+    * {
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box;
+-webkit-tap-highlight-color: transparent;
+text-decoration: none;
+}
+
+html,
+body {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: pink;
+}
+
+.container {
+
+background: pink;
+}
+
+
+
+/* #dff0f6 */
+
+button {
+font-family: 'Open Sans', sans-serif;
+font-size: 1.5rem;
+color: #fff;
+background: black;
+padding: 1.1rem 3.4rem;
+border-radius: .2rem;
+transition: opacity .7s;
+border-radius: 20%;
+}
+
+button:hover {
+cursor: pointer;
+background: #053056;
+}
+
+</style>
+
+<script>
+    const audio = new Audio("/audio.mp3");
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                audio.play();
+            });
+        });
+</script>
+
+</body>
+</html>
